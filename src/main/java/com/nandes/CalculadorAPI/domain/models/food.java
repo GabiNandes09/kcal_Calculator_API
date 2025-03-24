@@ -9,7 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class food {
+public class Food {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
@@ -65,7 +65,7 @@ public class food {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final food other = (food) obj;
+        final Food other = (Food) obj;
         return Objects.equals(this.name, other.name);
     }
 
